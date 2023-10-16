@@ -157,7 +157,6 @@ footer {
 
 @media (min-width: 750px) {
     body {
-        margin: 0;
         background-image: url(./images/bg-desktop.svg);
     }
 
@@ -178,7 +177,6 @@ footer {
 
     main {
         flex-direction: row;
-        justify-content: center;
         gap: 3.3875rem;
         padding: 3.5rem 4.5rem 2.5rem;
     }

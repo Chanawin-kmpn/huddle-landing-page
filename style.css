@@ -44,14 +44,17 @@ p {
 }
 
 /* Font responsive section */
-
+    body {
+        background-color: hsla(257, 40%, 49%, 1);
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
 /* Main section */
 
 main {
     display: flex;
     flex-direction: column;
-    background-color: hsla(257, 40%, 49%, 1);
-    background-image: url(./images/bg-mobile.svg);
+    
     padding: 2rem 2.3rem;
 }
 
@@ -142,6 +145,7 @@ a:hover svg path {
 @media (min-width: 750px) {
     body {
         margin: 0;
+        background-image: url(./images/bg-desktop.svg);
     }
     /* Font responsive section */
 
@@ -162,7 +166,6 @@ a:hover svg path {
         flex-direction: row;
         justify-content: center;
         gap: 3.3875rem;
-        background-image: url(./images/bg-desktop.svg);
         padding: 3.5rem 4.5rem 2.5rem;
     }
 

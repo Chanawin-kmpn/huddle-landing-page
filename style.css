@@ -122,14 +122,11 @@ a.register-btn:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     width: 1.6963rem;
     height: 1.75rem;
     border: 0.80px white solid;
     border-radius: 100%;
-}
-
-path {
-    fill: hsla(0, 0%, 100%, 1);
 }
 
 .social-section a:hover {
@@ -137,8 +134,10 @@ path {
 
 }
 
-a:hover svg path {
-    fill: hsla(322, 100%, 66%, 1);
+a:hover .fa-facebook-f:before,
+a:hover .fa-twitter:before,
+a:hover .fa-instagram:before {
+    color: hsla(322, 100%, 66%, 1);
 }
 
 /* Social section */

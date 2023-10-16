@@ -44,17 +44,18 @@ p {
 }
 
 /* Font responsive section */
-    body {
-        background-color: hsla(257, 40%, 49%, 1);
-        background-image: url(./images/bg-mobile.svg);
-        background-repeat: no-repeat;
-    }
+body {
+    background-color: hsla(257, 40%, 49%, 1);
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+}
+
 /* Main section */
 
 main {
     display: flex;
     flex-direction: column;
-    
+
     padding: 2rem 2.3rem;
 }
 
@@ -142,11 +143,24 @@ a:hover svg path {
 
 /* Social section */
 
+footer {
+    background-color: hsla(0, 0%, 100%, 1);
+}
+
+.attribution {
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 @media (min-width: 750px) {
     body {
         margin: 0;
         background-image: url(./images/bg-desktop.svg);
     }
+
     /* Font responsive section */
 
     h1 {

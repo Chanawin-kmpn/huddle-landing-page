@@ -1,0 +1,226 @@
+:root {
+    --fs-600: 1.5rem;
+    --fs-700: 2.5rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Font responsive section */
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Font responsive section */
+
+/* Main section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(257, 40%, 49%, 1);
+    background-image: url(./images/bg-mobile.svg);
+    padding: 2rem 2.3rem;
+}
+
+/* Heading section */
+
+.heading-section {
+    margin-bottom: 3.75rem;
+}
+
+.main-logo {
+    margin-bottom: 3.875rem;
+    width: 7.8rem;
+}
+
+.main-logo img {
+    max-height: 2.0875rem;
+}
+
+/* Heading section */
+
+/* Content section */
+
+.content-section {
+    color: hsla(0, 0%, 100%, 1);
+    text-align: center;
+}
+
+.main-description {
+    margin-top: 0.8em;
+    margin-bottom: 1.4em;
+}
+
+
+a.register-btn {
+    display: inline-block;
+    color: hsla(257, 40%, 49%, 1);
+    font-size: 0.75rem;
+    line-height: 1.125;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 100%, 1);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.27);
+    border-radius: 20px;
+    transition: color 150ms ease-out, background-color 150ms ease-out;
+    margin-bottom: 4rem;
+    padding: 1.2408em 6.2616em 1.1em 6.3216em;
+}
+
+a.register-btn:hover {
+    color: hsla(0, 0%, 100%, 1);
+    background-color: hsla(301, 70%, 71%, 1);
+}
+
+/* Content section */
+
+/* Social section */
+
+.social-section {
+    display: flex;
+    justify-content: center;
+    gap: 0.6787rem;
+}
+
+.social-section a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6963rem;
+    height: 1.75rem;
+    border: 0.80px white solid;
+    border-radius: 100%;
+}
+
+path {
+    fill: hsla(0, 0%, 100%, 1);
+}
+
+.social-section a:hover {
+    border-color: hsla(322, 100%, 66%, 1);
+
+}
+
+a:hover svg path {
+    fill: hsla(322, 100%, 66%, 1);
+}
+
+/* Social section */
+
+@media (min-width: 750px) {
+    body {
+        margin: 0;
+    }
+    /* Font responsive section */
+
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: -0.02rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
+
+    /* Font responsive section */
+
+    /* Main section */
+
+    main {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3.3875rem;
+        background-image: url(./images/bg-desktop.svg);
+        padding: 3.5rem 4.5rem 2.5rem;
+    }
+
+    /* Heading section */
+
+    .heading-section {
+        max-width: 44.5rem;
+        margin-bottom: 3.75rem;
+    }
+
+
+    .main-logo {
+        margin-bottom: 5.375rem;
+        width: 20rem;
+    }
+
+    .main-logo img {
+        max-height: 3.25rem;
+    }
+
+    /* Heading section */
+
+    /* Content section */
+
+    .content-section {
+        position: relative;
+        text-align: left;
+        max-width: 32.5rem;
+        padding-block-start: 11.3rem;
+    }
+
+    .main-description {
+        margin-top: 1em;
+        margin-bottom: 1.4em;
+    }
+
+    a.register-btn {
+        max-width: 12.5rem;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        border-radius: 28px;
+        padding: 0.7222em 3.5em 0.8888em 3.5555em;
+    }
+
+    /* Social section */
+
+    .social-section {
+        position: absolute;
+        right: -0.3125rem;
+        bottom: 0;
+        gap: 1rem;
+    }
+
+    .social-section a {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+
+    /* Social section */
+}
